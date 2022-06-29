@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="css/calculatrice.css">
+    <script language="javascript" type="text/javascript" src="js/calculatrice.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="3"><input type="text" id="resultat" class="displaybox" name="resultat" disabled/></td>
+            <td><input class="bouton" type="button" value="C" onClick="clearceresultatdechiasse()" style="background-color: yellow"></td>
+        </tr>
+
+        <tr>
+            <td><input class="bouton" type="button" value="7" onClick="display('7')"></td>
+            <td><input class="bouton" type="button" value="8" onClick="display('8')"></td>
+            <td><input class="bouton" type="button" value="9" onClick="display('9')"></td>
+            <td><input class="bouton" type="button" value="-" onClick="display('-')"></td>
+        </tr>
+
+        <tr>
+            <td><input class="bouton" type="button" value="4" onClick="display('4')"></td>
+            <td><input class="bouton" type="button" value="5" onClick="display('5')"></td>
+            <td><input class="bouton" type="button" value="6" onClick="display('6')"></td>
+            <td><input class="bouton" type="button" value="+" onClick="display('+')"></td>
+        </tr>
+
+        <tr>
+            <td><input class="bouton" type="button" value="1" onClick="display('1')"></td>
+            <td><input class="bouton" type="button" value="2" onClick="display('2')"></td>
+            <td><input class="bouton" type="button" value="3" onClick="display('3')"></td>
+            <td><input class="bouton" type="button" value="/" onClick="display('/')"></td>
+        </tr>
+
+        <tr>
+            <td><input class="bouton" type="button" value="." onClick="display('.')"></td>
+            <td><input class="bouton" type="button" value="0" onClick="display('0')"></td>
+            <td><input class="bouton" type="button" value="*" onClick="display('*')"></td>
+            <td><input class="bouton" type="button" value="=" onClick="calcul()" style="background-color: yellow"></td>
+        </tr>
+
+    </table>
+
+
+</body>
+</html>
